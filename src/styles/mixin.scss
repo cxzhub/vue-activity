@@ -1,0 +1,18 @@
+@mixin background($url) {
+  background-image: url($url);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@mixin layout($justify-content: flex-start, $align-items: stretch, $flex-direction: row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
